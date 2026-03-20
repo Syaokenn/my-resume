@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAP TIAN HAO | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#info" data-i18n="nav-info">BASIC INFO</a></li>
+            <li><a href="#experience" data-i18n="nav-exp">EXPERIENCE</a></li>
+            <li><a href="#value" data-i18n="nav-value">VALUE</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">PROJECTS</a></li>
+        </ul>
+        <div class="lang-switch">
+            <button onclick="switchLang('en')" id="btn-en" class="active">EN</button>
+            <button onclick="switchLang('zh')" id="btn-zh">中文</button>
+        </div>
+        <i class="fas fa-bars menu-icon"></i>
+    </nav>
+
+    <header class="hero-section">
+        <div class="top-blue-tab">
+            <p>KENN YAP</p>
+            <p data-i18n="top-tab-sub">PORTFOLIO</p>
+        </div>
+        <div class="hero-content">
+            <p class="date-label" data-i18n="hero-date">UPDATED ON 2026</p>
+            <h1 class="hero-title" id="hero-title" data-i18n="hero-title">A tech-driven mind<br>obsessed with efficiency.</h1>
+            <p class="hero-subtitle" data-i18n="hero-subtitle">BRIDGING TECHNOLOGY & BUSINESS AUTOMATION</p>
+        </div>
+        <div class="hero-skills">
+            <p>FULL-STACK WEB</p>
+            <p>AI INTEGRATION</p>
+            <p>BUSINESS OPS</p>
+            <p class="close-icon">✖</p>
+        </div>
+    </header>
+
+    <section id="info" class="resume-section">
+        <div class="vertical-text" data-i18n="vert-info">CTDO & DEVELOPER</div>
+        <div class="section-container">
+            <div class="left-col">
+                <div class="giant-number">01</div>
+                <h2 class="section-title" data-i18n="sec-info-title">Basic<br>Information</h2>
+            </div>
+            <div class="right-col info-grid">
+                <div class="info-text">
+                    <p><strong data-i18n="lbl-name">Name:</strong> YAP TIAN HAO (Kenn)</p>
+                    <p><strong data-i18n="lbl-deg">Specialization:</strong> <span data-i18n="val-deg">Computer Science / Genetic Science</span></p>
+                    <p><strong data-i18n="lbl-loc">Location:</strong> Kuala Lumpur, Malaysia</p>
+                    <p><strong data-i18n="lbl-lang">Languages:</strong> <span data-i18n="val-lang">English, Mandarin, Malay</span></p>
+                    <br>
+                    <p class="bio" data-i18n="bio-text">Full-stack developer with 5+ years of experience, currently serving as CTDO at AASION. Specialized in translating operational needs into scalable technical solutions, focusing on AI integration and HR digitalization.</p>
+                </div>
+                <div class="info-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portrait">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="resume-section grid-bg">
+        <div class="vertical-text" data-i18n="vert-exp">CAREER TIMELINE</div>
+        <div class="section-container">
+            <div class="left-col">
+                <div class="giant-number">02</div>
+                <h2 class="section-title" data-i18n="sec-exp-title">Work<br>Experience</h2>
+                <div class="target-job">
+                    <h3 data-i18n="job-target-title">Career Goal</h3>
+                    <p data-i18n="job-ind">Industry: HealthTech / IT / Software</p>
+                    <p data-i18n="job-pos">Position: Senior Developer / Tech Lead</p>
+                </div>
+            </div>
+            <div class="right-col timeline-container">
+                <div class="timeline-item">
+                    <h3>AASION Sdn. Bhd.</h3>
+                    <p class="role" data-i18n="role-1">Chief Technology & Digital Officer (CTDO)</p>
+                    <p class="date" data-i18n="date-1">2025.01 - Present</p>
+                    <p class="desc" data-i18n="desc-1">Lead development of full-stack e-commerce platforms. Implemented cloud-based HR systems and deployed AI chatbots to reduce manual customer service workloads.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Cap360 Sdn. Bhd.</h3>
+                    <p class="role" data-i18n="role-2">Mobile App Developer</p>
+                    <p class="date" data-i18n="date-2">2023.06 - 2024.12</p>
+                    <p class="desc" data-i18n="desc-2">Developed high-performance mobile features using Java, React, and Flutter. Collaborated with cross-functional teams to deliver stable mobile solutions.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Marke Communication</h3>
+                    <p class="role" data-i18n="role-3">Multimedia Developer</p>
+                    <p class="date" data-i18n="date-3">Early Career</p>
+                    <p class="desc" data-i18n="desc-3">Created interactive applications using Unity and built responsive web interfaces using HTML, CSS, PHP, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="value" class="resume-section">
+        <div class="vertical-text" data-i18n="vert-val">CORE COMPETENCE</div>
+        <div class="section-container">
+            <div class="left-col">
+                <div class="giant-number">03</div>
+                <h2 class="section-title" data-i18n="sec-val-title">Individual<br>Value</h2>
+                <div class="skills-list">
+                    <p data-i18n="skill-1">✦ Interdisciplinary Background (IT + Genetics)</p>
+                    <p data-i18n="skill-2">✦ Independent Architectural Thinking</p>
+                    <p data-i18n="skill-3">✦ Expert in Business Process Automation</p>
+                </div>
+            </div>
+            <div class="right-col value-cards">
+                <div class="card dark-card">
+                    <h3 data-i18n="card-1-title">WHAT CAN I DO?</h3>
+                    <ul>
+                        <li data-i18n="card-1-li1">Full-Stack Web & App Dev</li>
+                        <li data-i18n="card-1-li2">AI Agent Workflow Automation</li>
+                        <li data-i18n="card-1-li3">HR Digital Transformation</li>
+                    </ul>
+                </div>
+                <div class="card light-card">
+                    <h3 data-i18n="card-2-title">WHAT DO I SEEK?</h3>
+                    <p data-i18n="card-2-li1">☑ Solving real business pain points with code</p>
+                    <p data-i18n="card-2-li2">☑ Building high-availability user experiences</p>
+                    <p data-i18n="card-2-li3">☑ Innovation in the HealthTech space</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="resume-section grid-bg">
+        <div class="vertical-text" data-i18n="vert-proj">FEATURED PROJECTS</div>
+        <div class="section-container">
+            <div class="left-col">
+                <div class="giant-number">04</div>
+                <h2 class="section-title" data-i18n="sec-proj-title">Featured<br>Projects</h2>
+                <div class="project-tags">
+                    <p data-i18n="tag-1">E-Commerce Systems</p>
+                    <p data-i18n="tag-2">AI Customer Service</p>
+                    <p data-i18n="tag-3">Cross-Platform Apps</p>
+                </div>
+            </div>
+            <div class="right-col project-gallery">
+                <div class="gallery-item large"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce"></div>
+                <div class="gallery-item small"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Data"></div>
+                <div class="gallery-item small"><img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mobile"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ai-chat-widget" id="aiChatWidget">
+        <div class="chat-header" onclick="toggleChat()">
+            <div class="header-title">
+                <i class="fas fa-robot"></i> <span data-i18n="ai-header">AI Assistant (Gemini)</span>
+            </div>
+            <i class="fas fa-chevron-up" id="chatToggleIcon"></i>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-messages" id="chatMessages">
+                </div>
+            <div class="chat-input-box">
+                <input type="text" id="userInput" placeholder="Ask about Kenn's tech stack...">
+                <button onclick="sendToGemini()" class="btn-primary"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ⚠️ 请在此处填入你的 Gemini API Key
+        const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"; 
+
+        // ================= 1. 中英双语数据包 =================
+        const i18n = {
+            en: {
+                "nav-info": "BASIC INFO", "nav-exp": "EXPERIENCE", "nav-value": "VALUE", "nav-projects": "PROJECTS",
+                "top-tab-sub": "PORTFOLIO", "hero-date": "UPDATED ON 2026",
+                "hero-title": "A tech-driven mind<br>obsessed with efficiency.",
+                "hero-subtitle": "BRIDGING TECHNOLOGY & BUSINESS AUTOMATION",
+                "vert-info": "CTDO & DEVELOPER", "sec-info-title": "Basic<br>Information",
+                "lbl-name": "Name:", "lbl-deg": "Specialization:", "val-deg": "Computer Science / Genetic Science",
+                "lbl-loc": "Location:", "lbl-lang": "Languages:", "val-lang": "English, Mandarin, Malay",
+                "bio-text": "Full-stack developer with 5+ years of experience, currently serving as CTDO at AASION. Specialized in translating operational needs into scalable technical solutions, focusing on AI integration and HR digitalization.",
+                "vert-exp": "CAREER TIMELINE", "sec-exp-title": "Work<br>Experience",
+                "job-target-title": "Career Goal", "job-ind": "Industry: HealthTech / IT / Software", "job-pos": "Position: Senior Developer / Tech Lead",
+                "role-1": "Chief Technology & Digital Officer (CTDO)", "date-1": "2025.01 - Present", "desc-1": "Lead development of full-stack e-commerce platforms. Implemented cloud-based HR systems and deployed AI chatbots to reduce manual customer service workloads.",
+                "role-2": "Mobile App Developer", "date-2": "2023.06 - 2024.12", "desc-2": "Developed high-performance mobile features using Java, React, and Flutter. Collaborated with cross-functional teams to deliver stable mobile solutions.",
+                "role-3": "Multimedia Developer", "date-3": "Early Career", "desc-3": "Created interactive applications using Unity and built responsive web interfaces using HTML, CSS, PHP, and JavaScript.",
+                "vert-val": "CORE COMPETENCE", "sec-val-title": "Individual<br>Value",
+                "skill-1": "✦ Interdisciplinary Background (IT + Genetics)", "skill-2": "✦ Independent Architectural Thinking", "skill-3": "✦ Expert in Business Process Automation",
+                "card-1-title": "WHAT CAN I DO?", "card-1-li1": "Full-Stack Web & App Dev", "card-1-li2": "AI Agent Workflow Automation", "card-1-li3": "HR Digital Transformation",
+                "card-2-title": "WHAT DO I SEEK?", "card-2-li1": "☑ Solving real business pain points with code", "card-2-li2": "☑ Building high-availability user experiences", "card-2-li3": "☑ Innovation in the HealthTech space",
+                "vert-proj": "FEATURED PROJECTS", "sec-proj-title": "Featured<br>Projects",
+                "tag-1": "E-Commerce Systems", "tag-2": "AI Customer Service", "tag-3": "Cross-Platform Apps",
+                "ai-header": "AI Assistant (Gemini)",
+                "ai-welcome": "Hello! I am Kenn's AI Assistant. Ask me anything about his skills, experience, or education!",
+                "ai-placeholder": "Ask about Kenn...",
+                "sys-prompt": "You are the AI Assistant for Yap Tian Hao (Kenn). Answer concisely in English."
+            },
+            zh: {
+                "nav-info": "基本信息", "nav-exp": "工作经历", "nav-value": "个人价值", "nav-projects": "项目作品",
+                "top-tab-sub": "个人简历", "hero-date": "更新于 2026年",
+                "hero-title": "热爱技术与业务融合<br>并无法自拔的开发者。",
+                "hero-subtitle": "连接技术与商业自动化",
+                "vert-info": "FULL-STACK DEV", "sec-info-title": "基本<br>信息",
+                "lbl-name": "姓名:", "lbl-deg": "专业:", "val-deg": "计算机科学学士 / 遗传学硕士",
+                "lbl-loc": "坐标:", "lbl-lang": "语言:", "val-lang": "中文, English, Malay",
+                "bio-text": "拥有5年以上经验的全栈开发工程师，现任AASION CTDO。擅长将业务需求转化为可扩展的技术方案，深耕AI集成、HR数字化及企业自动化系统。",
+                "vert-exp": "PROFESSIONAL EXP", "sec-exp-title": "工作<br>经历",
+                "job-target-title": "求职意向", "job-ind": "行业: HealthTech / 互联网 / 软件", "job-pos": "职位: 资深开发 / 技术主管",
+                "role-1": "首席技术与数字官 (CTDO)", "date-1": "2025.01 - 至今", "desc-1": "主导全栈电商平台开发；实施云端HR管理系统；设计并部署AI聊天机器人，大幅减少人工客服工作量。",
+                "role-2": "移动端开发工程师", "date-2": "2023.06 - 2024.12", "desc-2": "使用 Java, React, 和 Flutter 开发移动应用，与跨部门团队协作交付稳定移动端解决方案。",
+                "role-3": "多媒体开发工程师", "date-3": "早期经历", "desc-3": "使用 Unity 开发互动小程序，运用 HTML, CSS, PHP, JS 构建响应式 Web 界面。",
+                "vert-val": "CORE COMPETENCE", "sec-val-title": "个人<br>价值",
+                "skill-1": "✦ 跨学科背景 (IT + 营养遗传学)", "skill-2": "✦ 独立思考与架构能力", "skill-3": "✦ 丰富的业务自动化经验",
+                "card-1-title": "我能做什么？", "card-1-li1": "全栈 Web & App 开发", "card-1-li2": "AI Agent 流程自动化", "card-1-li3": "电商与HR数字化转型",
+                "card-2-title": "我追求的是什么？", "card-2-li1": "☑ 用代码解决真实的商业痛点", "card-2-li2": "☑ 打造高可用、流畅的用户体验", "card-2-li3": "☑ 结合科技与大健康领域的创新",
+                "vert-proj": "FEATURED PROJECTS", "sec-proj-title": "项目<br>作品",
+                "tag-1": "电商系统开发", "tag-2": "AI 客服机器人", "tag-3": "移动端双端开发",
+                "ai-header": "简历 AI 助手",
+                "ai-welcome": "你好！我是 Kenn 的专属 AI 助理。你可以问我关于他技术栈、项目细节或教育背景的任何问题！",
+                "ai-placeholder": "例如: 他会哪些编程语言？",
+                "sys-prompt": "你是 Kenn 的简历助理。请用简短专业的中文回答。"
+            }
+        };
+
+        let currentLang = 'en';
+
+        // ================= 2. 切换语言函数 =================
+        function switchLang(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            
+            // 替换所有带有 data-i18n 的文本
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key]) { el.innerHTML = i18n[lang][key]; }
+            });
+
+            // 更新输入框 Placeholder 和 按钮样式
+            document.getElementById('userInput').placeholder = i18n[lang]['ai-placeholder'];
+            document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+            document.getElementById('btn-zh').className = lang === 'zh' ? 'active' : '';
+
+            // 重置聊天窗口并添加对应语言的欢迎语
+            document.getElementById('chatMessages').innerHTML = '';
+            appendMessage(i18n[lang]['ai-welcome'], 'bot-msg');
+        }
+
+        // 页面加载完毕初始化英文
+        window.onload = () => switchLang('en');
+
+        // ================= 3. AI 聊天框 UI 控制 =================
+        function toggleChat() {
+            const windowObj = document.getElementById('chatWindow');
+            const iconObj = document.getElementById('chatToggleIcon');
+            const isHidden = windowObj.style.display === 'none' || windowObj.style.display === '';
+            windowObj.style.display = isHidden ? 'flex' : 'none';
+            iconObj.className = isHidden ? 'fas fa-chevron-down' : 'fas fa-chevron-up';
+        }
+
+        function appendMessage(text, className) {
+            const chatBox = document.getElementById('chatMessages');
+            const msgDiv = document.createElement('div');
+            const id = 'msg-' + Date.now();
+            msgDiv.id = id;
+            msgDiv.className = `msg ${className}`;
+            msgDiv.innerHTML = text.replace(/\n/g, '<br>');
+            chatBox.appendChild(msgDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return id;
+        }
+
+        // ================= 4. Gemini API 调用核心 =================
+        const baseBackground = `
+            Kenn's Info: 
+            CTDO at AASION. 5+ years experience. 
+            Tech: Flutter, React, Java, HTML/CSS, PHP, JS, Unity, Google Apps Script. 
+            Edu: Master of Genetic Science, BSc Computer Science, BSc Food & Nutrition.
+        `;
+
+        async function sendToGemini() {
+            const inputField = document.getElementById('userInput');
+            const message = inputField.value.trim();
+            if (!message) return;
+
+            appendMessage(message, 'user-msg');
+            inputField.value = '';
+
+            if (GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE") {
+                appendMessage(currentLang === 'zh' ? "⚠️ 错误：请先在代码中配置您的 Gemini API Key。" : "⚠️ Error: Please configure your Gemini API Key in the code first.", 'bot-msg');
+                return;
+            }
+
+            const loadingId = appendMessage(currentLang === 'zh' ? "思考中..." : "Thinking...", 'bot-msg loading');
+            
+            // 动态决定 AI 回复的语言
+            const finalSystemPrompt = baseBackground + "\n" + i18n[currentLang]['sys-prompt'];
+
+            // 注意这里的 URL，使用的是 v1beta 的完整标准路径，可有效避免 404
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+            
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{
+                            role: "user",
+                            parts: [{ text: finalSystemPrompt + "\n\nUser Question: " + message }]
+                        }],
+                        generationConfig: { temperature: 0.7, maxOutputTokens: 250 }
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                document.getElementById(loadingId).remove();
+
+                if (data.candidates && data.candidates[0].content.parts[0].text) {
+                    appendMessage(data.candidates[0].content.parts[0].text, 'bot-msg');
+                } else {
+                    appendMessage("Error parsing response.", 'bot-msg error');
+                }
+            } catch (error) {
+                console.error("Fetch Error:", error);
+                document.getElementById(loadingId).remove();
+                appendMessage(currentLang === 'zh' ? `网络或API错误 (${error.message})。请检查网络环境或API Key。` : `Network/API Error (${error.message}). Please check console.`, 'bot-msg error');
+            }
+        }
+
+        document.getElementById('userInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') sendToGemini(); });
+    </script>
+</body>
+</html>
