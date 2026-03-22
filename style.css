@@ -1,6 +1,8 @@
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
 :root {
-    --primary-blue: #4A90E2;
-    --light-blue: #E6F0FA;
+    --primary-green: #9A3F3F;
+    --light-green: #FEFFD3;
     --text-main: #333;
     --text-light: #777;
     --grid-color: rgba(0, 0, 0, 0.04);
@@ -17,28 +19,28 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 }
 .sticky-nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
 .sticky-nav a { text-decoration: none; color: var(--text-main); font-weight: 700; font-size: 0.85rem; transition: 0.3s; }
-.sticky-nav a:hover { color: var(--primary-blue); }
+.sticky-nav a:hover { color: var(--primary-green); }
 
 .lang-switch { display: flex; gap: 5px; background: #f0f0f0; padding: 4px; border-radius: 20px; }
 .lang-switch button { border: none; background: transparent; padding: 5px 12px; cursor: pointer; font-size: 0.8rem; font-weight: bold; border-radius: 15px; color: #888; transition: 0.3s; }
-.lang-switch button.active { background: var(--primary-blue); color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.lang-switch button.active { background: var(--primary-green); color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 .menu-icon { display: none; font-size: 1.5rem; }
 
 /* Hero 封面 */
 .hero-section {
     position: relative; height: 60vh; min-height: 450px;
-    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80') center/cover;
+    background: url('resume.jpg') center/cover;
     display: flex; flex-direction: column; justify-content: center; padding: 0 10%;
 }
-.hero-section::before { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(255,255,255,0.85); z-index: 1; }
-.top-blue-tab { position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: var(--primary-blue); color: #fff; padding: 20px 40px; text-align: center; z-index: 2; font-weight: bold; box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3); }
+.hero-section::before { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(255,255,255,0.75); z-index: 1; }
+.top-blue-tab { position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: var(--primary-green); color: #fff; padding: 20px 40px; text-align: center; z-index: 2; font-weight: bold; box-shadow: 0 4px 10px rgba(154, 63, 63, 0.3); }
 .top-blue-tab p:first-child { font-size: 1.2rem; }
 .top-blue-tab p:last-child { font-size: 0.9rem; font-weight: normal; }
 .hero-content { position: relative; z-index: 2; margin-top: 50px; }
-.hero-title { font-size: 3rem; color: var(--primary-blue); font-weight: 800; line-height: 1.2; margin: 10px 0; }
+.hero-title { font-size: 3rem; color: var(--primary-green); font-weight: 800; line-height: 1.2; margin: 10px 0; }
 .date-label { font-size: 0.8rem; letter-spacing: 3px; color: var(--text-light); }
 .hero-subtitle { font-size: 1rem; color: var(--text-light); letter-spacing: 1px; }
-.hero-skills { position: absolute; right: 10%; top: 30%; z-index: 2; text-align: right; color: var(--primary-blue); font-weight: bold; font-size: 0.9rem; line-height: 2; }
+.hero-skills { position: absolute; right: 10%; top: 30%; z-index: 2; text-align: right; color: var(--primary-green); font-weight: bold; font-size: 0.9rem; line-height: 2; }
 .hero-skills .close-icon { color: var(--text-light); margin-top: 10px; }
 
 /* 基础 Section 布局 */
@@ -53,29 +55,48 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 
 /* 01 Info */
 .info-grid { display: flex; gap: 40px; align-items: flex-start; }
-.info-text p { margin-bottom: 8px; font-size: 1.05rem; }
+.info-text p { text-align: left; margin-bottom: 8px; font-size: 1.05rem; }
 .info-text .bio { color: var(--text-light); font-size: 0.95rem; margin-top: 15px; }
-.info-image img { width: 250px; height: 350px; object-fit: cover; filter: grayscale(20%); box-shadow: -15px 15px 0 var(--light-blue); }
+.info-image img { width: 250px; height: 350px; object-fit: cover; filter: grayscale(20%); box-shadow: -15px 15px 0 var(--light-green); }
 
 /* 02 Experience */
 .target-job { margin-top: 40px; font-size: 0.9rem; color: var(--text-light); }
 .target-job h3 { color: var(--text-main); margin-bottom: 10px; font-size: 1rem; }
-.timeline-container { border-left: 2px solid var(--primary-blue); padding-left: 30px; }
+.timeline-container { border-left: 2px solid var(--primary-green); padding-left: 30px; }
 .timeline-item { position: relative; margin-bottom: 40px; }
-.timeline-item::before { content: ''; position: absolute; left: -37px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--primary-blue); border: 3px solid white; }
+.timeline-item::before { content: ''; position: absolute; left: -37px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--primary-green); border: 3px solid white; }
 .timeline-item h3 { font-size: 1.3rem; margin-bottom: 5px;}
-.timeline-item .role { font-weight: bold; color: var(--primary-blue); margin-bottom: 5px;}
+.timeline-item .role { font-weight: bold; color: var(--primary-green); margin-bottom: 5px;}
 .timeline-item .date { font-size: 0.85rem; color: var(--text-light); margin-bottom: 15px;}
 .timeline-item .desc { font-size: 0.95rem; color: #555; }
 
 /* 03 Value Cards */
 .skills-list { margin-top: 30px; font-size: 0.95rem; font-weight: 500;}
 .value-cards { display: flex; gap: 30px; }
-.card { flex: 1; padding: 40px; border-radius: 4px; }
+.card {
+    flex: 1;
+    padding: 40px;
+    border-radius: 8px; /* 稍微增加一点圆角更好看 */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* 添加过渡时间 */
+    will-change: transform; /* 优化性能 */
+}
+
+/* 鼠标悬停时的状态 */
+.card:hover {
+    transform: translateY(-8px); /* 向上抬起 8px */
+}
+
+.dark-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.light-card:hover {
+    box-shadow: 0 15px 30px rgba(164, 63, 63, 0.15); /* 浅蓝色卡片用带蓝色的阴影 */
+}
 .card h3 { font-size: 1.2rem; margin-bottom: 20px; }
-.dark-card { background: #2D3436; color: white; }
-.dark-card ul { list-style-position: inside; line-height: 2; color: #ccc;}
-.light-card { background: var(--light-blue); color: var(--text-main); }
+.dark-card { background: #280905; color: white; }
+.dark-card p { margin-bottom: 15px; font-size: 0.95rem; color: #ccc;}
+.light-card { background: var(--light-green); color: var(--text-main); }
 .light-card p { margin-bottom: 15px; font-size: 0.95rem;}
 
 /* 04 Projects */
@@ -87,17 +108,83 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 .large { grid-column: span 2; height: 300px; }
 .small { height: 200px; }
 
+/* ================= 下载按钮 ================= */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background-color: var(--primary-green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(154, 63, 63, 0.4);
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.btn-download:hover {
+    background-color: #280905; /* 鼠标悬停时颜色变深 */
+    transform: translateY(-3px); /* 微微上浮 */
+    box-shadow: 0 8px 20px rgba(154, 63, 63, 0.6);
+    color: #fff;
+}
+
+/* ================= Footer 页脚 ================= */
+.site-footer {
+    background: #280905; /* 采用深色背景，与上面深色卡片呼应 */
+    color: #ccc;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 4px solid var(--primary-green); /* 顶部加上蓝色强调线 */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--primary-green);
+    transform: translateY(-3px); /* 鼠标悬停时图标会有微微上浮的动画 */
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
 /* AI Widget */
 .ai-chat-widget { position: fixed; bottom: 30px; right: 30px; width: 350px; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 1000; border: 1px solid #eee; overflow: hidden; }
-.chat-header { background: var(--primary-blue); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: bold; }
+.chat-header { background: #6D9E51; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: bold; }
 .chat-window { display: none; flex-direction: column; height: 400px; }
 .chat-messages { flex: 1; padding: 15px; overflow-y: auto; background: #f9f9f9; display: flex; flex-direction: column; gap: 10px; }
 .msg { max-width: 85%; padding: 10px 15px; border-radius: 8px; font-size: 0.9rem; line-height: 1.5; }
 .bot-msg { background: white; border: 1px solid #eee; align-self: flex-start; }
-.user-msg { background: var(--primary-blue); color: white; align-self: flex-end; }
+.user-msg { background: #6D9E51; color: white; align-self: flex-end; }
 .chat-input-box { display: flex; padding: 10px; background: white; border-top: 1px solid #eee; }
 .chat-input-box input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-right: 10px; outline: none; }
-.btn-primary { background: var(--primary-blue); color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+.btn-primary { background: #6D9E51; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
 
 /* 移动端响应式 */
 @media (max-width: 900px) {
@@ -113,4 +200,42 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
     .sticky-nav ul { display: none; }
     .menu-icon { display: block; }
     .ai-chat-widget { width: calc(100% - 40px); bottom: 20px; right: 20px; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 应用到首屏元素，并设置不同的延迟时间 (Staggered effect) */
+.hero-title {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-subtitle {
+    opacity: 0; /* 初始隐藏 */
+    animation: fadeInUp 0.8s ease-out 0.3s forwards; /* 延迟 0.3 秒 */
+}
+
+.btn-download {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards; /* 延迟 0.6 秒 */
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); /* 平滑的缓动效果 */
+}
+
+/* 激活时的类 */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
