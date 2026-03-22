@@ -12,7 +12,6 @@
 
 body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
 
-/* 导航与语言切换 */
 .sticky-nav {
     position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
     padding: 15px 10%; display: flex; justify-content: space-between; align-items: center; z-index: 100; border-bottom: 1px solid #eee;
@@ -26,7 +25,6 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 .lang-switch button.active { background: var(--primary-green); color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 .menu-icon { display: none; font-size: 1.5rem; }
 
-/* Hero 封面 */
 .hero-section {
     position: relative; height: 60vh; min-height: 450px;
     background: url('resume.jpg') center/cover;
@@ -42,8 +40,32 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 .hero-subtitle { font-size: 1rem; color: var(--text-light); letter-spacing: 1px; }
 .hero-skills { position: absolute; right: 10%; top: 30%; z-index: 2; text-align: right; color: var(--primary-green); font-weight: bold; font-size: 0.9rem; line-height: 2; }
 .hero-skills .close-icon { color: var(--text-light); margin-top: 10px; }
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background-color: var(--primary-green);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(154, 63, 63, 0.4);
+    transition: all 0.3s ease;
+    width: fit-content;
+}
 
-/* 基础 Section 布局 */
+.btn-download:hover {
+    background-color: #280905; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(154, 63, 63, 0.6);
+    color: #fff;
+}
+
+
+/* 00 Section  */
 .resume-section { position: relative; padding: 100px 10%; border-bottom: 1px dashed #ccc; }
 .grid-bg { background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px); background-size: 25px 25px; background-color: #fbfbfb; }
 .vertical-text { position: absolute; left: 4%; top: 100px; writing-mode: vertical-rl; transform: rotate(180deg); color: #ccc; font-weight: bold; letter-spacing: 4px; font-size: 0.8rem; }
@@ -71,19 +93,25 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 .timeline-item .desc { font-size: 0.95rem; color: #555; }
 
 /* 03 Value Cards */
-.skills-list { margin-top: 30px; font-size: 0.95rem; font-weight: 500;}
-.value-cards { display: flex; gap: 30px; }
+.skills-list { 
+    margin-top: 30px; 
+    font-size: 0.95rem; 
+    font-weight: 500;
+}
+.value-cards { 
+    display: flex; 
+    gap: 30px; 
+}
 .card {
     flex: 1;
     padding: 40px;
-    border-radius: 8px; /* 稍微增加一点圆角更好看 */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* 添加过渡时间 */
-    will-change: transform; /* 优化性能 */
+    border-radius: 8px; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    will-change: transform; 
 }
 
-/* 鼠标悬停时的状态 */
 .card:hover {
-    transform: translateY(-8px); /* 向上抬起 8px */
+    transform: translateY(-8px); 
 }
 
 .dark-card:hover {
@@ -91,7 +119,7 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 }
 
 .light-card:hover {
-    box-shadow: 0 15px 30px rgba(164, 63, 63, 0.15); /* 浅蓝色卡片用带蓝色的阴影 */
+    box-shadow: 0 15px 30px rgba(164, 63, 63, 0.15);
 }
 .card h3 { font-size: 1.2rem; margin-bottom: 20px; }
 .dark-card { background: #280905; color: white; }
@@ -108,39 +136,15 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 .large { grid-column: span 2; height: 300px; }
 .small { height: 200px; }
 
-/* ================= 下载按钮 ================= */
-.btn-download {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-    padding: 14px 30px;
-    background-color: var(--primary-green);
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(154, 63, 63, 0.4);
-    transition: all 0.3s ease;
-    width: fit-content;
-}
 
-.btn-download:hover {
-    background-color: #280905; /* 鼠标悬停时颜色变深 */
-    transform: translateY(-3px); /* 微微上浮 */
-    box-shadow: 0 8px 20px rgba(154, 63, 63, 0.6);
-    color: #fff;
-}
-
-/* ================= Footer 页脚 ================= */
+/* Footer */
 .site-footer {
-    background: #280905; /* 采用深色背景，与上面深色卡片呼应 */
+    background: #280905; 
     color: #ccc;
     text-align: center;
     padding: 40px 20px;
     margin-top: 50px;
-    border-top: 4px solid var(--primary-green); /* 顶部加上蓝色强调线 */
+    border-top: 4px solid var(--primary-green); 
 }
 
 .footer-content {
@@ -166,7 +170,7 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 
 .social-links a:hover {
     color: var(--primary-green);
-    transform: translateY(-3px); /* 鼠标悬停时图标会有微微上浮的动画 */
+    transform: translateY(-3px); 
 }
 
 .site-footer p {
@@ -186,7 +190,6 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
 .chat-input-box input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-right: 10px; outline: none; }
 .btn-primary { background: #6D9E51; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
 
-/* 移动端响应式 */
 @media (max-width: 900px) {
     .section-container { flex-direction: column; gap: 30px; }
     .vertical-text, .hero-skills { display: none; }
@@ -202,39 +205,37 @@ body { background: #fff; color: var(--text-main); line-height: 1.6; overflow-x: 
     .ai-chat-widget { width: calc(100% - 40px); bottom: 20px; right: 20px; }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateX(-50px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
-/* 应用到首屏元素，并设置不同的延迟时间 (Staggered effect) */
 .hero-title {
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInLeft 0.8s ease-out forwards;
 }
 
 .hero-subtitle {
-    opacity: 0; /* 初始隐藏 */
-    animation: fadeInUp 0.8s ease-out 0.3s forwards; /* 延迟 0.3 秒 */
+    opacity: 0; 
+    animation: fadeInLeft 0.8s ease-out 0.3s forwards; 
 }
 
 .btn-download {
     opacity: 0;
-    animation: fadeInUp 0.8s ease-out 0.6s forwards; /* 延迟 0.6 秒 */
+    animation: fadeInUp 0.8s ease-out 0.6s forwards; 
 }
 
 .reveal {
     opacity: 0;
     transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); /* 平滑的缓动效果 */
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); 
 }
 
-/* 激活时的类 */
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
