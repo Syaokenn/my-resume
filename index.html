@@ -442,17 +442,17 @@
                 const data = await response.json();
                 document.getElementById(loadingId).remove();
 
-                // 检查后端是否返回了错误
                 if (!response.ok) {
                     throw new Error(data.error || `HTTP Status: ${response.status}`);
                 }
 
-                // 成功渲染消息
                 if (data.candidates && data.candidates[0].content.parts[0].text) {
                     appendMessage(data.candidates[0].content.parts[0].text, 'bot-msg');
                 } else {
                     appendMessage("Error parsing response.", 'bot-msg error');
                 }
+
+				console.log(data);
             } catch (error) {
                 console.error("Fetch Error:", error);
                 document.getElementById(loadingId).remove();
