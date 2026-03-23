@@ -429,9 +429,11 @@
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
             
             try {
-                const response = await fetch(url, {
+                // ⚠️ 注意这里的变化：URL 变成了我们自己的 Vercel 后端接口路径
+                const response = await fetch('/api/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
+                    // 将需要的内容打包发给后端处理
                     body: JSON.stringify({
                         contents: [{
                             role: "user",
@@ -441,13 +443,15 @@
                     })
                 });
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
                 const data = await response.json();
                 document.getElementById(loadingId).remove();
 
+                // 检查后端是否返回了错误
+                if (!response.ok) {
+                    throw new Error(data.error || `HTTP Status: ${response.status}`);
+                }
+
+                // 成功渲染消息
                 if (data.candidates && data.candidates[0].content.parts[0].text) {
                     appendMessage(data.candidates[0].content.parts[0].text, 'bot-msg');
                 } else {
@@ -456,10 +460,9 @@
             } catch (error) {
                 console.error("Fetch Error:", error);
                 document.getElementById(loadingId).remove();
-                appendMessage(currentLang === 'zh' ? `网络或API错误 (${error.message})。请检查网络环境或API Key。` : `Network/API Error (${error.message}). Please check console.`, 'bot-msg error');
+                appendMessage(currentLang === 'zh' ? `网络或系统错误 (${error.message})。请稍后再试。` : `System Error (${error.message}). Please try again later.`, 'bot-msg error');
             }
-        }
-
+		
         document.getElementById('userInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') sendToGemini(); });
 		
 		function revealOnScroll() {
