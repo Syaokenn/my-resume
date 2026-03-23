@@ -174,8 +174,6 @@
 
     <script>
 
-        const GEMINI_API_KEY = "AIzaSyD5ZePI_LYyfcGT2aVYHtFRotutrLrZtjc"; 
-
         // ================= 1. Langauge Package =================
         const i18n = {
             en: {
@@ -425,8 +423,6 @@
             const loadingId = appendMessage( "Thinking...", 'bot-msg loading');
             
             const finalSystemPrompt = baseBackground;
-
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
             
             try {
                 // ⚠️ 注意这里的变化：URL 变成了我们自己的 Vercel 后端接口路径
