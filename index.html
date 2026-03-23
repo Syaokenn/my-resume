@@ -462,6 +462,7 @@
                 document.getElementById(loadingId).remove();
                 appendMessage(currentLang === 'zh' ? `网络或系统错误 (${error.message})。请稍后再试。` : `System Error (${error.message}). Please try again later.`, 'bot-msg error');
             }
+		}
 		
         document.getElementById('userInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') sendToGemini(); });
 		
