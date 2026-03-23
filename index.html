@@ -282,7 +282,7 @@
 
 			---
 
-			# 👤 CANDIDATE PROFILE
+			# CANDIDATE PROFILE
 
 			The candidate is a Full-Stack Developer and Chief Technology & Digital Officer (CTDO) with:
 
@@ -294,11 +294,6 @@
 			Key systems built:
 
 			1. E-commerce Platform
-			- Product catalog, cart, checkout
-			- Payment gateway integration
-			- Order management system
-			- Inventory tracking
-			- Admin dashboard
 
 			2. AI Chatbot Automation
 			- Automated customer inquiry handling
@@ -361,16 +356,6 @@
 
 			---
 
-			# 🧠 BEHAVIORAL QUESTIONS
-
-			For behavioral questions, use:
-
-			Situation → Action → Result
-
-			Keep answers concise (30–60 seconds speaking length)
-
-			---
-
 			# 🧪 TECHNICAL QUESTIONS
 
 			- Provide clear and structured explanations
@@ -385,7 +370,6 @@
 			- DO NOT invent fake experience
 			- DO NOT mention technologies not used
 			- DO NOT exaggerate responsibilities
-			- DO NOT say "as an AI"
 
 			If unsure:
 			→ Give a logical, realistic answer based on similar experience
@@ -398,9 +382,6 @@
 
 			[MODE: TECHNICAL]
 			→ Provide deeper technical explanation
-
-			[MODE: INTERVIEW]
-			→ Answer like a real interview response (default)
 
 			---
 
@@ -429,7 +410,6 @@
                 const response = await fetch('/api/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    // 将需要的内容打包发给后端处理
                     body: JSON.stringify({
                         contents: [{
                             role: "user",
